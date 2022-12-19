@@ -8255,6 +8255,10 @@ h1 {
   }
 }
 
+.main-page__main {
+  margin-top: 0;
+}
+
 .main-page__current-offers {
   margin-bottom: -27px;
 }
@@ -8807,6 +8811,11 @@ h1 {
     width: 290px;
   }
 }
+@media (min-width: 1280px) {
+  .products__item {
+    min-width: 290px;
+  }
+}
 @media (min-width: 1510px) {
   .products__item {
     width: 343px;
@@ -9303,7 +9312,7 @@ h1 {
 .arrows__item--alter {
   border-color: #ffffff;
   background-color: #ffffff;
-  background-image: url("../../img/icons/slider-arrow-right.svg");
+  background-image: url("../img/icons/slider-arrow-right.svg");
 }
 .arrows__item--alter:hover {
   border-color: #42bd98;
@@ -9336,7 +9345,7 @@ h1 {
 }
 @media (min-width: 768px) {
   .n-service__item {
-    width: 232px;
+    min-width: 232px;
   }
 }
 @media (min-width: 1280px) {
@@ -9671,11 +9680,6 @@ h1 {
   max-width: 100%;
   filter: drop-shadow(0px 18px 15px rgba(0, 0, 0, 0.07));
 }
-@media (min-width: 1280px) {
-  .tile-range__swiper {
-    min-width: 100%;
-  }
-}
 
 .tile-range__list {
   margin: 0;
@@ -9695,6 +9699,11 @@ h1 {
 @media (min-width: 768px) {
   .tile-range__item {
     width: 289px;
+  }
+}
+@media (min-width: 1280px) {
+  .tile-range__item {
+    min-width: 289px;
   }
 }
 @media (min-width: 1510px) {
@@ -10128,11 +10137,11 @@ h1 {
 }
 
 .n-brands__nav-name--italy::before {
-  background: url("../../img/italy-flag.png") no-repeat center;
+  background: url("../img/italy-flag.png") no-repeat center;
 }
 
 .n-brands__nav-name--portugal::before {
-  background: url("../../img/portugal-flag.png") no-repeat center;
+  background: url("../img/portugal-flag.png") no-repeat center;
 }
 
 .n-brands__wrapper {
@@ -10959,11 +10968,13 @@ h1 {
   grid-area: 1/1/2/2;
   margin: 0;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 1000ms;
 }
 
 .current-offers__slide--active {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .current-offers__content {
