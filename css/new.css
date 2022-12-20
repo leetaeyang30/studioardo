@@ -10981,6 +10981,7 @@ h1 {
 .current-offers__slide--active {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .current-offers__content {
