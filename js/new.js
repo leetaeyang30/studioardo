@@ -618,76 +618,76 @@ if (inspirationGallery) {
   })
 };
 
-// const productsSection = document.querySelector('.products');
+const productsSection = document.querySelector('.products');
 
-// if (productsSection) {
-//   (function () {
-//     const breakpoint = window.matchMedia('(min-width: 1440px)');
-//     const productsSwiper = document.querySelector('.products-swiper');
-//     const productsList = document.querySelector('.products__list');
-//     const productSlides = document.querySelectorAll('.products__item');
+if (productsSection) {
+  (function () {
+    const breakpoint = window.matchMedia('(min-width: 1440px)');
+    const productsSwiper = document.querySelector('.products-swiper');
+    const productsList = document.querySelector('.products__list');
+    const productSlides = document.querySelectorAll('.products__item');
 
-//     let productSwiper;
-//     const breakpointChecker = () => {
+    let productSwiper;
+    const breakpointChecker = () => {
 
-//       if (breakpoint.matches === true) {
+      if (breakpoint.matches === true) {
 
-//         if (productSwiper !== undefined) {
-//           productsSwiper.destroy(true, true);
-//           productsSwiper.classList.remove('swiper');
-//           productsList.classList.remove('swiper-wrapper');
-//           productSlides.forEach((slide) => {
-//             slide.classList.remove('swiper-slide');
-//           });
-//         }
+        if (productSwiper !== undefined) {
+          productsSwiper.destroy(true, true);
+          productsSwiper.classList.remove('swiper');
+          productsList.classList.remove('swiper-wrapper');
+          productSlides.forEach((slide) => {
+            slide.classList.remove('swiper-slide');
+          });
+        }
 
-//         return;
-//       } else if (breakpoint.matches === false) {
-//         if (productsSwiper.classList.contains('swiper')) {
-//           return;
-//         } else {
-//           return enableSwiper();
-//         }
-//       }
+        return;
+      } else if (breakpoint.matches === false) {
+        if (productsSwiper.classList.contains('swiper')) {
+          return;
+        } else {
+          return enableSwiper();
+        }
+      }
 
-//     };
+    };
 
-//     const enableSwiper = () => {
-//       productsSwiper.classList.add('swiper');
-//       productsList.classList.add('swiper-wrapper');
-//       productSlides.forEach((slide) => {
-//         slide.classList.add('swiper-slide');
-//       });
+    const enableSwiper = () => {
+      productsSwiper.classList.add('swiper');
+      productsList.classList.add('swiper-wrapper');
+      productSlides.forEach((slide) => {
+        slide.classList.add('swiper-slide');
+      });
 
-//       productSwiper = new Swiper('.products-swiper', {
-//         slidesPerView: 1,
-//         grid: {
-//           rows: 2,
-//         },
-//         spaceBetween: 8,
-//         navigation: {
-//           nextEl: ".products__arrow--next",
-//           prevEl: ".products__arrow--back",
-//         },
-//         breakpoints: {
-//           768: {
-//             slidesPerView: 'auto',
-//           },
-//           1280: {
-//             slidesPerView: 4,
-//             spaceBetween: 5,
-//           },
-//           1510: {
-//             spaceBetween: 10,
-//           }
-//         }
-//       });
-//     };
+      productSwiper = new Swiper('.products-swiper', {
+        slidesPerView: 1,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 8,
+        navigation: {
+          nextEl: ".products__arrow--next",
+          prevEl: ".products__arrow--back",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 'auto',
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+          1510: {
+            spaceBetween: 10,
+          }
+        }
+      });
+    };
 
-//     window.addEventListener('resize', breakpointChecker);
-//     breakpointChecker();
-//   })();
-// }
+    window.addEventListener('resize', breakpointChecker);
+    breakpointChecker();
+  })();
+}
 
 const projectsGallery = document.querySelector('.projects');
 if (projectsGallery) {
@@ -899,63 +899,63 @@ const initSelects = (parentNode) => {
 initSelects(document);
 
 
-// const brandsSection = document.querySelector('.n-brands');
+const brandsSection = document.querySelector('.n-brands');
 
-// if (brandsSection) {
-//   (function () {
-//     const breakpoint = window.matchMedia('(min-width: 768px)');
-//     const brandsSwiper = document.querySelector('.brands-swiper');
-//     const brandsList = document.querySelector('.n-brands__list');
-//     const brandsSlides = document.querySelectorAll('.n-brands__item');
+if (brandsSection) {
+  (function () {
+    const breakpoint = window.matchMedia('(min-width: 768px)');
+    const brandsSwiper = document.querySelector('.brands-swiper');
+    const brandsList = document.querySelector('.n-brands__list');
+    const brandsSlides = document.querySelectorAll('.n-brands__item');
 
-//     let brandSwiper;
-//     const breakpointChecker = () => {
+    let brandSwiper;
+    const breakpointChecker = () => {
 
-//       if (breakpoint.matches === false) {
+      if (breakpoint.matches === false) {
 
-//         if (brandSwiper !== undefined) {
-//           brandsSwiper.destroy(true, true);
-//           brandsSwiper.classList.remove('swiper');
-//           brandsList.classList.remove('swiper-wrapper');
-//           brandsSlides.forEach((slide) => {
-//             slide.classList.remove('swiper-slide');
-//           });
-//         }
-//         return;
+        if (brandSwiper !== undefined) {
+          brandsSwiper.destroy(true, true);
+          brandsSwiper.classList.remove('swiper');
+          brandsList.classList.remove('swiper-wrapper');
+          brandsSlides.forEach((slide) => {
+            slide.classList.remove('swiper-slide');
+          });
+        }
+        return;
 
-//       } else if (breakpoint.matches === true) {
-//         if (brandsSwiper.classList.contains('swiper')) {
-//           return;
-//         } else {
-//           return enableSwiper();
-//         }
-//       }
+      } else if (breakpoint.matches === true) {
+        if (brandsSwiper.classList.contains('swiper')) {
+          return;
+        } else {
+          return enableSwiper();
+        }
+      }
 
-//     };
+    };
 
-//     const enableSwiper = () => {
-//       brandsSwiper.classList.add('swiper');
-//       brandsList.classList.add('swiper-wrapper');
-//       brandsSlides.forEach((slide) => {
-//         slide.classList.add('swiper-slide');
-//       });
+    const enableSwiper = () => {
+      brandsSwiper.classList.add('swiper');
+      brandsList.classList.add('swiper-wrapper');
+      brandsSlides.forEach((slide) => {
+        slide.classList.add('swiper-slide');
+      });
 
-//       brandSwiper = new Swiper('.brands-swiper', {
-//         slidesPerView: 'auto',
-//         spaceBetween: 5,
-//         loop: true,
-//         navigation: {
-//           nextEl: ".n-brands__arrow--next",
-//           prevEl: ".n-brands__arrow--back",
-//         },
-//       });
+      brandSwiper = new Swiper('.brands-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 5,
+        loop: true,
+        navigation: {
+          nextEl: ".n-brands__arrow--next",
+          prevEl: ".n-brands__arrow--back",
+        },
+      });
 
-//     };
+    };
 
-//     window.addEventListener('resize', breakpointChecker);
-//     breakpointChecker();
-//   })();
-// }
+    window.addEventListener('resize', breakpointChecker);
+    breakpointChecker();
+  })();
+}
 
 const newsSection = document.querySelector('.n-news');
 if (newsSection) {
@@ -1057,74 +1057,74 @@ if (goodsSlider1) {
   });
 }
 
-// const popularGoodsSection = document.querySelector('.goods--popular');
+const popularGoodsSection = document.querySelector('.goods--popular');
 
-// if (popularGoodsSection) {
+if (popularGoodsSection) {
 
-//   (function () {
+  (function () {
 
-//     const breakpoint = window.matchMedia('(min-width: 1280px)');
-//     const popGoodsSwiper = document.querySelector('.goods--popular .goods__slider');
-//     const popGoodsList = document.querySelector('.goods--popular .goods__list');
-//     const popGoodsSlides = document.querySelectorAll('.goods--popular .good-list__item');
+    const breakpoint = window.matchMedia('(min-width: 1280px)');
+    const popGoodsSwiper = document.querySelector('.goods--popular .goods__slider');
+    const popGoodsList = document.querySelector('.goods--popular .goods__list');
+    const popGoodsSlides = document.querySelectorAll('.goods--popular .good-list__item');
 
-//     let popGoodSwiper;
-//     const breakpointChecker = () => {
-//       if (breakpoint.matches === true) {
+    let popGoodSwiper;
+    const breakpointChecker = () => {
+      if (breakpoint.matches === true) {
 
-//         if (popGoodSwiper !== undefined) {
-//           popGoodsSwiper.destroy(true, true);
+        if (popGoodSwiper !== undefined) {
+          popGoodsSwiper.destroy(true, true);
 
-//           popularGoodsSection.classList.remove('goods--swiper');
-//           popGoodsSwiper.classList.remove('swiper');
-//           popGoodsList.classList.remove('swiper-wrapper');
-//           popGoodsSlides.forEach((slide) => {
-//             slide.classList.remove('swiper-slide');
-//           });
-//         }
+          popularGoodsSection.classList.remove('goods--swiper');
+          popGoodsSwiper.classList.remove('swiper');
+          popGoodsList.classList.remove('swiper-wrapper');
+          popGoodsSlides.forEach((slide) => {
+            slide.classList.remove('swiper-slide');
+          });
+        }
 
-//         return;
+        return;
 
-//       } else if (breakpoint.matches === false) {
-//         if (popGoodsSwiper.classList.contains('swiper')) {
-//           return;
-//         } else {
-//           return enableSwiper();
-//         }
-//       }
+      } else if (breakpoint.matches === false) {
+        if (popGoodsSwiper.classList.contains('swiper')) {
+          return;
+        } else {
+          return enableSwiper();
+        }
+      }
 
-//     };
+    };
 
-//     const enableSwiper = () => {
-//       popularGoodsSection.classList.add('goods--swiper');
-//       popGoodsSwiper.classList.add('swiper');
-//       popGoodsList.classList.add('swiper-wrapper');
-//       popGoodsSlides.forEach((slide) => {
-//         slide.classList.add('swiper-slide');
-//       });
+    const enableSwiper = () => {
+      popularGoodsSection.classList.add('goods--swiper');
+      popGoodsSwiper.classList.add('swiper');
+      popGoodsList.classList.add('swiper-wrapper');
+      popGoodsSlides.forEach((slide) => {
+        slide.classList.add('swiper-slide');
+      });
 
-//       popGoodSwiper = new Swiper(".goods--popular .goods__slider", {
-//         slidesPerView: 1,
-//         spaceBetween: 9,
-//         allowTouchMove: true,
-//         navigation: {
-//           nextEl: ".goods--popular .goods__slider-button-next",
-//           prevEl: ".goods--popular .goods__slider-button-prev",
-//         },
-//         breakpoints: {
-//           420: {
-//             slidesPerView: 'auto',
-//           },
-//           1280: {
-//             allowTouchMove: false,
-//             slidesPerView: 4,
-//           },
-//         },
-//         watchSlidesProgress: true
-//       });
-//     };
+      popGoodSwiper = new Swiper(".goods--popular .goods__slider", {
+        slidesPerView: 1,
+        spaceBetween: 9,
+        allowTouchMove: true,
+        navigation: {
+          nextEl: ".goods--popular .goods__slider-button-next",
+          prevEl: ".goods--popular .goods__slider-button-prev",
+        },
+        breakpoints: {
+          420: {
+            slidesPerView: 'auto',
+          },
+          1280: {
+            allowTouchMove: false,
+            slidesPerView: 4,
+          },
+        },
+        watchSlidesProgress: true
+      });
+    };
 
-//     window.addEventListener('resize', breakpointChecker);
-//     breakpointChecker();
-//   })();
-// }
+    window.addEventListener('resize', breakpointChecker);
+    breakpointChecker();
+  })();
+}
