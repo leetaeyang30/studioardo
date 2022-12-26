@@ -10955,12 +10955,8 @@ h1 {
 }
 
 .current-offers__slide {
-  display: none;
-  margin: 0;
-}
-
-.current-offers__slide--active {
   display: grid;
+  margin: 0;
 }
 
 .current-offers__content {
