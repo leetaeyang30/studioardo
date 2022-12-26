@@ -701,23 +701,23 @@ if (projectsGallery) {
   })
 };
 
-const serviceSwiper = document.querySelector('.n-service');
-if (serviceSwiper) {
-  let swiper = new Swiper(".n-service-swiper", {
-    slidesPerView: 'auto',
-    watchOverflow: true,
-    spaceBetween: 5,
-    breakpoints: {
-      1280: {
-        slidesPerView: 3,
-        spaceBetween: 7,
-      },
-      1510: {
-        spaceBetween: 20,
-      },
-    }
-  })
-};
+// const serviceSwiper = document.querySelector('.n-service');
+// if (serviceSwiper) {
+//   let swiper = new Swiper(".n-service-swiper", {
+//     slidesPerView: 'auto',
+//     watchOverflow: true,
+//     spaceBetween: 5,
+//     breakpoints: {
+//       1280: {
+//         slidesPerView: 3,
+//         spaceBetween: 7,
+//       },
+//       1510: {
+//         spaceBetween: 20,
+//       },
+//     }
+//   })
+// };
 
 const tileSwiper = document.querySelector('.tile-range');
 if (tileSwiper) {
@@ -969,51 +969,51 @@ if (newsSection) {
   });
 };
 
-const offersSection = document.querySelector('.current-offers');
-if (offersSection) {
-  const tabSwiper = new Swiper('.offers-tabs-swiper', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    pagination: {
-      el: '.current-offers__dots',
-      bulletActiveClass: 'current-offers__dot--current',
-      bulletClass: 'current-offers__dot',
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-      },
-      1280: {
-        slidesPerView: 6,
-        slidesPerGroup: 1,
-        loop: false,
-      },
-    },
-  });
+// const offersSection = document.querySelector('.current-offers');
+// if (offersSection) {
+//   const tabSwiper = new Swiper('.offers-tabs-swiper', {
+//     slidesPerView: 1,
+//     spaceBetween: 0,
+//     loop: true,
+//     pagination: {
+//       el: '.current-offers__dots',
+//       bulletActiveClass: 'current-offers__dot--current',
+//       bulletClass: 'current-offers__dot',
+//       clickable: true,
+//     },
+//     breakpoints: {
+//       768: {
+//         slidesPerView: 3,
+//         slidesPerGroup: 3,
+//       },
+//       1280: {
+//         slidesPerView: 6,
+//         slidesPerGroup: 1,
+//         loop: false,
+//       },
+//     },
+//   });
 
-  const swiper = new Swiper('.current-offers__slider', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    navigation: {
-      nextEl: ".current-offers__arrow--next",
-      prevEl: ".current-offers__arrow--back",
-    },
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
-    thumbs: {
-      swiper: tabSwiper,
-    },
-    autoplay: {
-      delay: 12000,
-    },
-  });
-};
+//   const swiper = new Swiper('.current-offers__slider', {
+//     slidesPerView: 1,
+//     spaceBetween: 0,
+//     loop: true,
+//     navigation: {
+//       nextEl: ".current-offers__arrow--next",
+//       prevEl: ".current-offers__arrow--back",
+//     },
+//     effect: 'fade',
+//     fadeEffect: {
+//       crossFade: true
+//     },
+//     thumbs: {
+//       swiper: tabSwiper,
+//     },
+//     autoplay: {
+//       delay: 12000,
+//     },
+//   });
+// };
 
 const goodsSlider1 = document.querySelector('.goods--swiper--1 .goods__slider');
 if (goodsSlider1) {
